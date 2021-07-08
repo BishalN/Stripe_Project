@@ -2,7 +2,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-// import { Checkout, CheckoutSuccess, CheckoutFail } from "./Checkout";
+import { Checkout, CheckoutSuccess, CheckoutFail } from "./Checkout";
 // import Payments from "./Payments";
 // import Customers from "./Customers";
 // import Subscriptions from "./Subscriptions";
@@ -52,11 +52,11 @@ function App() {
         </nav>
 
         <main>
-          {/* <Switch>
+          <Switch>
             <Route path="/checkout">
               <Checkout />
             </Route>
-            <Route path="/payments">
+            {/* <Route path="/payments">
               <Payments />
             </Route>
             <Route path="/customers">
@@ -64,7 +64,7 @@ function App() {
             </Route>
             <Route path="/subscriptions">
               <Subscriptions />
-            </Route>
+            </Route> */}
             <Route path="/success">
               <CheckoutSuccess />
             </Route>
@@ -74,7 +74,7 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-          </Switch> */}
+          </Switch>
         </main>
       </div>
     </Router>
@@ -86,17 +86,6 @@ function Home() {
     <>
       <div class="well">
         <h2>Stripe React + Node.js Live Demo</h2>
-      </div>
-
-      <div class="embed-responsive embed-responsive-16by9 vid">
-        <iframe
-          src="https://player.vimeo.com/video/416381401"
-          // width="640"
-          // height="360"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
       </div>
 
       <div class="well">
